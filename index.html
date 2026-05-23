@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puneeth K | Portfolio</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script>
+        tailwind.config = { darkMode: 'class' }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<body class="transition-colors duration-300 bg-white dark:bg-gray-900">
+
+    <!-- SCROLL PROGRESS BAR -->
+    <script src="js/features/scroll-progress.js"></script>
+
+    <!-- ======================== NAVBAR ======================== -->
+    <nav class="sticky top-0 z-50 backdrop-blur-xl bg-white/90 border-b border-indigo-100/50
+                dark:bg-gray-900/90 dark:border-gray-700/60 shadow-sm">
+
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+            <!-- LOGO -->
+            <a href="#"
+                class="text-2xl font-extrabold bg-gradient-to-r from-indigo-600 via-violet-600 to-pink-500
+                       bg-clip-text text-transparent tracking-wide font-display">
+                SMPL.
+            </a>
+
+            <!-- NAV LINKS -->
+            <ul class="hidden md:flex items-center gap-8 font-medium text-gray-600 dark:text-gray-300">
+                <li>
+                    <a href="#projects" class="relative group py-1 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+                        Projects
+                        <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-gradient-to-r from-indigo-600 to-violet-600 rounded-full transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#experience" class="relative group py-1 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+                        Experience
+                        <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-gradient-to-r from-indigo-600 to-violet-600 rounded-full transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#skills" class="relative group py-1 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+                        Skills
+                        <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-gradient-to-r from-indigo-600 to-violet-600 rounded-full transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" class="relative group py-1 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+                        Contact
+                        <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-gradient-to-r from-indigo-600 to-violet-600 rounded-full transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- RIGHT SIDE -->
+            <div class="flex items-center gap-3">
+
+                <!-- THEME TOGGLE -->
+                <button id="theme-toggle"
+                    class="w-10 h-10 flex items-center justify-center rounded-full
+                           bg-indigo-50 dark:bg-gray-800 border border-indigo-100 dark:border-gray-700
+                           hover:bg-indigo-100 dark:hover:bg-gray-700 transition-all text-lg shadow-sm">
+                    🌙
+                </button>
+
+                <!-- CHAT BUTTON -->
+                <a href="https://wa.me/916363018188" target="_blank"
+                    class="px-5 py-2 rounded-full bg-gradient-to-r from-green-500 to-emerald-500 text-white font-semibold
+                           flex items-center gap-2 hover:from-green-600 hover:to-emerald-600 transition-all shadow-md hover:shadow-lg hover:scale-105">
+                    💬 Chat
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- ======================== HERO SECTION ======================== -->
+    <section class="relative min-h-screen flex items-center justify-center
+                    px-6 lg:px-16 py-20 overflow-hidden text-center">
+
+        <!-- BACKGROUND -->
+        <div class="absolute inset-0 bg-gradient-to-br from-indigo-50 via-white to-violet-100
+                    dark:from-slate-900 dark:via-gray-900 dark:to-indigo-950"></div>
+
+        <!-- DECORATIVE ORBS -->
+        <div class="absolute top-20 left-10 w-96 h-96 bg-indigo-400 opacity-15 blur-3xl rounded-full pointer-events-none animate-pulse"></div>
+        <div class="absolute bottom-20 right-10 w-96 h-96 bg-violet-400 opacity-15 blur-3xl rounded-full pointer-events-none animate-pulse" style="animation-delay: 1.5s;"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-pink-300 opacity-5 blur-3xl rounded-full pointer-events-none"></div>
+
+        <!-- GRID PATTERN OVERLAY -->
+        <div class="absolute inset-0 bg-grid-pattern opacity-[0.03] dark:opacity-[0.05] pointer-events-none"></div>
+
+        <!-- CONTENT -->
+        <div class="relative z-10 flex flex-col items-center gap-8 max-w-3xl">
+
+            <!-- PROFILE IMAGE -->
+            <div class="relative group">
+                <div class="absolute inset-0 rounded-full bg-gradient-to-r from-indigo-500 via-violet-500 to-pink-500 blur-2xl opacity-40 group-hover:opacity-60 transition-opacity duration-500 scale-110"></div>
+                <div class="relative p-[3px] rounded-full bg-gradient-to-r from-indigo-600 via-violet-600 to-pink-500">
+                    <img src="Assets/ipm.jpeg" alt="Puneeth"
+                        class="w-40 h-40 lg:w-52 lg:h-52 object-cover rounded-full
+                               border-4 border-white dark:border-gray-900 shadow-2xl hover:scale-105 transition duration-500">
+                </div>
+                <!-- STATUS BADGE -->
+                <div class="absolute bottom-2 right-2 w-5 h-5 bg-green-500 rounded-full border-2 border-white dark:border-gray-900 shadow-md">
+                    <div class="w-full h-full bg-green-400 rounded-full animate-ping opacity-75"></div>
+                </div>
+            </div>
+
+            <!-- GREETING -->
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-50 dark:bg-indigo-900/40 border border-indigo-200 dark:border-indigo-700/50 text-indigo-700 dark:text-indigo-300 text-sm font-medium">
+                <span class="w-2 h-2 bg-indigo-500 rounded-full animate-pulse"></span>
+                Available for opportunities
+            </div>
+
+            <!-- NAME -->
+            <h1 class="text-5xl lg:text-7xl font-extrabold font-display
+                       bg-gradient-to-r from-indigo-600 via-violet-600 to-pink-500
+                       bg-clip-text text-transparent leading-tight">
+                Puneeth K
+            </h1>
+
+            <!-- ROLE - TYPING -->
+            <p class="text-xl text-gray-600 dark:text-gray-400 font-medium">
+                I'm a
+                <span id="typing-text"
+                    class="text-indigo-600 dark:text-indigo-400 border-r-2 border-indigo-500 pr-1 font-semibold">
+                </span>
+            </p>
+
+            <!-- BUTTONS -->
+            <div class="flex flex-wrap justify-center gap-4 mt-2">
+                <a href="#projects"
+                    class="px-8 py-3.5 rounded-xl text-white font-semibold
+                           bg-gradient-to-r from-indigo-600 via-violet-600 to-pink-500
+                           shadow-lg shadow-indigo-200 dark:shadow-indigo-900/40
+                           hover:scale-105 hover:shadow-xl hover:shadow-indigo-300/40 transition-all duration-300">
+                    🚀 View Projects
+                </a>
+                <a href="./Assets/Resume.pdf" target="_blank"
+                    class="px-8 py-3.5 rounded-xl font-semibold text-gray-700 dark:text-gray-200
+                           bg-white dark:bg-gray-800 border border-indigo-100 dark:border-gray-700
+                           shadow-md hover:shadow-lg hover:scale-105 hover:border-indigo-300 transition-all duration-300">
+                    📄 Download Resume
+                </a>
+            </div>
+
+            <!-- STATS -->
+            <div class="flex flex-wrap justify-center gap-4 mt-4">
+                <div class="px-5 py-2.5 rounded-xl bg-white dark:bg-gray-800/80 shadow-md border border-indigo-50 dark:border-gray-700 text-gray-700 dark:text-gray-300 font-medium hover:shadow-lg transition-all hover:-translate-y-0.5">
+                    💻 500+ GitHub Commits
+                </div>
+                <div class="px-5 py-2.5 rounded-xl bg-white dark:bg-gray-800/80 shadow-md border border-indigo-50 dark:border-gray-700 text-gray-700 dark:text-gray-300 font-medium hover:shadow-lg transition-all hover:-translate-y-0.5">
+                    🧠 9+ LeetCode Problems
+                </div>
+                <div class="px-5 py-2.5 rounded-xl bg-white dark:bg-gray-800/80 shadow-md border border-indigo-50 dark:border-gray-700 text-gray-700 dark:text-gray-300 font-medium hover:shadow-lg transition-all hover:-translate-y-0.5">
+                    🚀 2+ Projects Completed
+                </div>
+            </div>
+
+            <!-- SOCIAL ICONS -->
+            <div class="flex gap-3 mt-4">
+                <a href="https://www.linkedin.com/in/puneeth-k-512930265" target="_blank"
+                    class="group w-12 h-12 flex items-center justify-center rounded-full
+                           bg-white dark:bg-gray-800 border border-indigo-100 dark:border-gray-700 shadow-md
+                           hover:bg-indigo-600 hover:border-indigo-600 transition-all duration-300 hover:scale-110 hover:shadow-lg">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+                        class="w-5 h-5 group-hover:invert transition-all">
+                </a>
+                <a href="https://github.com/Puneeth-coder" target="_blank"
+                    class="group w-12 h-12 flex items-center justify-center rounded-full
+                           bg-white dark:bg-gray-800 border border-indigo-100 dark:border-gray-700 shadow-md
+                           hover:bg-gray-900 hover:border-gray-900 transition-all duration-300 hover:scale-110 hover:shadow-lg">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
+                        class="w-5 h-5 group-hover:invert transition-all">
+                </a>
+
+                <button id="lets-talk"
+                    class="group px-6 py-2 rounded-full flex items-center gap-2
+                           bg-gradient-to-r from-violet-500 to-pink-500
+                           text-white font-semibold shadow-md
+                           hover:shadow-lg hover:scale-105 transition-all duration-300">
+                    💌 Let's Talk
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ======================== PROJECTS ======================== -->
+    <section id="projects" class="reveal py-24 px-6 lg:px-16 bg-gradient-to-b from-gray-50 to-white dark:from-gray-950 dark:to-gray-900">
+        <div class="max-w-7xl mx-auto">
+
+            <!-- HEADER -->
+            <div class="text-center mb-14">
+                <span class="inline-block px-4 py-1 rounded-full bg-indigo-50 dark:bg-indigo-900/40 text-indigo-600 dark:text-indigo-300 text-sm font-semibold mb-4 border border-indigo-100 dark:border-indigo-700/50">Portfolio</span>
+                <h2 class="text-4xl lg:text-5xl font-extrabold font-display mb-4
+                           bg-gradient-to-r from-indigo-600 via-violet-600 to-pink-500
+                           bg-clip-text text-transparent">
+                    My Projects
+                </h2>
+                <p class="text-gray-500 dark:text-gray-400 max-w-2xl mx-auto text-lg">
+                    Showcasing modern full-stack applications built with scalable technologies
+                </p>
+            </div>
+
+            <!-- SEARCH + COUNT -->
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4 mb-10">
+                <div class="relative w-full md:w-1/2">
+                    <input type="text" id="project-search" placeholder="Search projects..."
+                        class="w-full px-5 py-3.5 pl-12 rounded-xl
+                               bg-white dark:bg-gray-800
+                               border border-indigo-100 dark:border-gray-700
+                               text-gray-800 dark:text-white
+                               shadow-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-300 outline-none transition-all">
+                    <span class="absolute left-4 top-3.5 text-gray-400 text-lg">🔍</span>
+                </div>
+                <div id="project-count" class="text-sm text-gray-500 dark:text-gray-400 font-medium">
+                </div>
+            </div>
+
+            <!-- FILTERS -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12">
+                <button class="filter-btn px-6 py-2.5 rounded-xl bg-gradient-to-r from-indigo-600 to-violet-600 text-white shadow-md shadow-indigo-200 dark:shadow-indigo-900/30 hover:scale-105 transition-all font-medium"
+                    data-category="All">All</button>
+                <button class="filter-btn px-6 py-2.5 rounded-xl bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 border border-indigo-100 dark:border-gray-700 hover:scale-105 hover:border-indigo-300 transition-all font-medium shadow-sm"
+                    data-category="Hardware">Hardware</button>
+                <button class="filter-btn px-6 py-2.5 rounded-xl bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 border border-indigo-100 dark:border-gray-700 hover:scale-105 hover:border-indigo-300 transition-all font-medium shadow-sm"
+                    data-category="IoT">IoT</button>
+                <button class="filter-btn px-6 py-2.5 rounded-xl bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 border border-indigo-100 dark:border-gray-700 hover:scale-105 hover:border-indigo-300 transition-all font-medium shadow-sm"
+                    data-category="Full Stack">Full Stack</button>
+            </div>
+
+            <!-- PROJECT GRID -->
+            <div id="projects-container"
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            </div>
+
+            <!-- EMPTY STATE -->
+            <p id="no-projects" class="hidden text-center text-gray-500 dark:text-gray-400 mt-8 text-lg">
+                No projects found matching your search.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- ======================== EXPERIENCE ======================== -->
+    <!-- BUG FIX: Fixed broken double-class attribute on section -->
+    <section id="experience" class="reveal py-24 px-6 lg:px-16 bg-gradient-to-br from-indigo-50 via-white to-violet-50 dark:from-gray-900 dark:via-gray-900 dark:to-indigo-950/30">
+
+        <div class="max-w-4xl mx-auto">
+
+            <!-- HEADER -->
+            <div class="text-center mb-16">
+                <span class="inline-block px-4 py-1 rounded-full bg-violet-50 dark:bg-violet-900/40 text-violet-600 dark:text-violet-300 text-sm font-semibold mb-4 border border-violet-100 dark:border-violet-700/50">Journey</span>
+                <h2 class="text-4xl lg:text-5xl font-extrabold font-display mb-4
+                           bg-gradient-to-r from-indigo-600 via-violet-600 to-pink-500
+                           bg-clip-text text-transparent">
+                    Education & Experience
+                </h2>
+                <p class="text-gray-500 dark:text-gray-400 text-lg">
+                    My academic journey and professional experience
+                </p>
+            </div>
+
+            <!-- TIMELINE -->
+            <div class="relative border-l-2 border-gradient-to-b from-indigo-300 to-violet-300 dark:from-indigo-700 dark:to-violet-700 space-y-10 pl-10" style="border-image: linear-gradient(to bottom, #6366f1, #8b5cf6) 1;">
+
+                <!-- SSLC -->
+                <div class="group relative">
+                    <span class="absolute -left-[2.85rem] top-4 w-6 h-6 rounded-full
+                                 bg-gradient-to-r from-indigo-500 to-violet-500
+                                 shadow-lg shadow-indigo-200 dark:shadow-indigo-900/50 group-hover:scale-125 transition-transform duration-300"></span>
+                    <div class="p-6 rounded-2xl bg-white dark:bg-gray-800/80 border border-indigo-50 dark:border-gray-700/60 shadow-md hover:shadow-xl hover:border-indigo-200 dark:hover:border-indigo-700 transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-start justify-between flex-wrap gap-2">
+                            <h3 class="text-xl font-bold text-gray-800 dark:text-white">SSLC</h3>
+                            <span class="px-3 py-1 text-xs rounded-full bg-indigo-50 dark:bg-indigo-900/40 text-indigo-600 dark:text-indigo-300 font-medium border border-indigo-100 dark:border-indigo-700/50">2018 - 2020</span>
+                        </div>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mt-1 mb-2">Aryan High School</p>
+                        <p class="text-sm text-gray-700 dark:text-gray-300 font-medium">📊 Scored 75.66%</p>
+                    </div>
+                </div>
+
+                <!-- PUC -->
+                <div class="group relative">
+                    <span class="absolute -left-[2.85rem] top-4 w-6 h-6 rounded-full
+                                 bg-gradient-to-r from-indigo-500 to-violet-500
+                                 shadow-lg shadow-indigo-200 dark:shadow-indigo-900/50 group-hover:scale-125 transition-transform duration-300"></span>
+                    <div class="p-6 rounded-2xl bg-white dark:bg-gray-800/80 border border-indigo-50 dark:border-gray-700/60 shadow-md hover:shadow-xl hover:border-indigo-200 dark:hover:border-indigo-700 transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-start justify-between flex-wrap gap-2">
+                            <h3 class="text-xl font-bold text-gray-800 dark:text-white">P.U in PCMCs</h3>
+                            <span class="px-3 py-1 text-xs rounded-full bg-indigo-50 dark:bg-indigo-900/40 text-indigo-600 dark:text-indigo-300 font-medium border border-indigo-100 dark:border-indigo-700/50">2020 - 2022</span>
+                        </div>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mt-1 mb-2">Sree Siddaganga PU College</p>
+                        <p class="text-sm text-gray-700 dark:text-gray-300 font-medium">📊 Scored 74.33%</p>
+                    </div>
+                </div>
+
+                <!-- BE -->
+                <div class="group relative">
+                    <span class="absolute -left-[2.85rem] top-4 w-6 h-6 rounded-full
+                                 bg-gradient-to-r from-violet-500 to-pink-500
+                                 shadow-lg shadow-violet-200 dark:shadow-violet-900/50 group-hover:scale-125 transition-transform duration-300"></span>
+                    <div class="p-6 rounded-2xl bg-white dark:bg-gray-800/80 border border-indigo-50 dark:border-gray-700/60 shadow-md hover:shadow-xl hover:border-violet-200 dark:hover:border-violet-700 transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-start justify-between flex-wrap gap-2">
+                            <h3 class="text-xl font-bold text-gray-800 dark:text-white">B.E Electrical & Electronics</h3>
+                            <span class="px-3 py-1 text-xs rounded-full bg-violet-50 dark:bg-violet-900/40 text-violet-600 dark:text-violet-300 font-medium border border-violet-100 dark:border-violet-700/50">2022 - 2026</span>
+                        </div>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mt-1 mb-2">Channabasaveshwara Institute of Technology</p>
+                        <p class="text-sm text-gray-700 dark:text-gray-300 font-medium">🎯 CGPA: 7.79</p>
+                    </div>
+                </div>
+
+                <!-- INTERNSHIP -->
+                <div class="group relative">
+                    <span class="absolute -left-[2.85rem] top-4 w-6 h-6 rounded-full
+                                 bg-gradient-to-r from-emerald-500 to-teal-500
+                                 shadow-lg shadow-emerald-200 dark:shadow-emerald-900/50 group-hover:scale-125 transition-transform duration-300"></span>
+                    <div class="p-6 rounded-2xl bg-white dark:bg-gray-800/80 border border-emerald-50 dark:border-gray-700/60 shadow-md hover:shadow-xl hover:border-emerald-200 dark:hover:border-emerald-700 transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-start justify-between flex-wrap gap-2">
+                            <h3 class="text-xl font-bold text-gray-800 dark:text-white">Full Stack Intern</h3>
+                            <span class="px-3 py-1 text-xs rounded-full bg-emerald-50 dark:bg-emerald-900/40 text-emerald-600 dark:text-emerald-300 font-medium border border-emerald-100 dark:border-emerald-700/50">2026</span>
+                        </div>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mt-1 mb-2">MERN Stack</p>
+                        <p class="text-sm text-gray-700 dark:text-gray-300 font-medium">💼 Worked on MERN stack applications and real-world projects.</p>
+                    </div>
+                </div>
+
+                <!-- KPTCL CERTIFICATE -->
+                <div class="group relative">
+                    <span class="absolute -left-[2.85rem] top-4 w-6 h-6 rounded-full
+                                 bg-gradient-to-r from-amber-500 to-orange-500
+                                 shadow-lg shadow-amber-200 dark:shadow-amber-900/50 group-hover:scale-125 transition-transform duration-300"></span>
+                    <div class="p-6 rounded-2xl bg-white dark:bg-gray-800/80 border border-amber-50 dark:border-gray-700/60 shadow-md hover:shadow-xl hover:border-amber-200 dark:hover:border-amber-700 transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-start justify-between flex-wrap gap-2">
+                            <h3 class="text-xl font-bold text-gray-800 dark:text-white">KPTCL Certification</h3>
+                            <span class="px-3 py-1 text-xs rounded-full bg-amber-50 dark:bg-amber-900/40 text-amber-600 dark:text-amber-300 font-medium border border-amber-100 dark:border-amber-700/50">2026</span>
+                        </div>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mt-1 mb-3">Karnataka Power Transmission Corporation</p>
+                        <a href="Assets/KPTCL Certificate.pdf" target="_blank"
+                            class="inline-flex items-center gap-2 text-sm px-4 py-2 rounded-lg bg-gradient-to-r from-amber-500 to-orange-500 text-white font-medium hover:from-amber-600 hover:to-orange-600 transition-all hover:shadow-md">
+                            📜 View Certificate
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== SKILLS ======================== -->
+    <section id="skills" class="reveal py-24 px-6 lg:px-16 bg-gradient-to-b from-white to-indigo-50 dark:from-gray-900 dark:to-gray-950">
+
+        <div class="max-w-7xl mx-auto">
+
+            <!-- HEADER -->
+            <div class="text-center mb-14">
+                <span class="inline-block px-4 py-1 rounded-full bg-pink-50 dark:bg-pink-900/40 text-pink-600 dark:text-pink-300 text-sm font-semibold mb-4 border border-pink-100 dark:border-pink-700/50">Expertise</span>
+                <h2 class="text-4xl lg:text-5xl font-extrabold font-display mb-4
+                           bg-gradient-to-r from-indigo-600 via-violet-600 to-pink-500
+                           bg-clip-text text-transparent">
+                    My Skills
+                </h2>
+                <p class="text-gray-500 dark:text-gray-400 max-w-xl mx-auto text-lg">
+                    Technologies and tools I use to build modern full-stack applications
+                </p>
+            </div>
+
+            <!-- FILTER BUTTONS -->
+            <div id="skill-filter-buttons" class="flex flex-wrap justify-center gap-3 mb-12">
+
+                <button class="skill-filter-btn active
+                               px-6 py-2.5 rounded-xl text-white font-semibold
+                               bg-gradient-to-r from-indigo-600 to-violet-600 shadow-md shadow-indigo-200 dark:shadow-indigo-900/30
+                               hover:scale-105 transition-all"
+                    data-category="All">All</button>
+
+                <button class="skill-filter-btn
+                               px-6 py-2.5 rounded-xl bg-white dark:bg-gray-800 font-medium
+                               border border-indigo-100 dark:border-gray-700 shadow-sm text-gray-600 dark:text-gray-300
+                               hover:scale-105 hover:border-indigo-300 transition-all"
+                    data-category="Frontend">Frontend</button>
+
+                <button class="skill-filter-btn
+                               px-6 py-2.5 rounded-xl bg-white dark:bg-gray-800 font-medium
+                               border border-indigo-100 dark:border-gray-700 shadow-sm text-gray-600 dark:text-gray-300
+                               hover:scale-105 hover:border-indigo-300 transition-all"
+                    data-category="Backend">Backend</button>
+
+                <button class="skill-filter-btn
+                               px-6 py-2.5 rounded-xl bg-white dark:bg-gray-800 font-medium
+                               border border-indigo-100 dark:border-gray-700 shadow-sm text-gray-600 dark:text-gray-300
+                               hover:scale-105 hover:border-indigo-300 transition-all"
+                    data-category="Tools">Tools</button>
+
+            </div>
+
+            <!-- SKILLS GRID -->
+            <div id="skills-container"
+                class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ======================== CONTACT ======================== -->
+    <!-- BUG FIX: Fixed broken double-class attribute on section -->
+    <section id="contact" class="reveal py-24 px-6 bg-gradient-to-br from-indigo-50 via-white to-violet-50 dark:from-gray-950 dark:via-gray-900 dark:to-indigo-950/30">
+        <div class="flex flex-col items-center">
+
+            <!-- HEADER -->
+            <div class="text-center mb-12">
+                <span class="inline-block px-4 py-1 rounded-full bg-indigo-50 dark:bg-indigo-900/40 text-indigo-600 dark:text-indigo-300 text-sm font-semibold mb-4 border border-indigo-100 dark:border-indigo-700/50">Get In Touch</span>
+                <h2 class="text-4xl lg:text-5xl font-extrabold font-display mb-4
+                           bg-gradient-to-r from-indigo-600 via-violet-600 to-pink-500
+                           bg-clip-text text-transparent">
+                    Contact Me
+                </h2>
+                <p class="text-gray-500 dark:text-gray-400 text-lg">I'll reply within 24 hours</p>
+            </div>
+
+            <form id="contact-form"
+                class="w-full max-w-lg p-8 rounded-2xl
+                       bg-white dark:bg-gray-800/80
+                       border border-indigo-100 dark:border-gray-700/60
+                       shadow-xl space-y-5 transition-all">
+
+                <!-- STATUS MESSAGE -->
+                <p id="form-message" class="text-sm text-center min-h-[1.25rem] font-medium"></p>
+
+                <!-- NAME -->
+                <div class="relative">
+                    <label class="block text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-1.5">Your Name</label>
+                    <input type="text" id="contact-name" placeholder="John Doe"
+                        class="w-full px-4 py-3 rounded-xl
+                               bg-gray-50 dark:bg-gray-900/70
+                               text-gray-800 dark:text-white
+                               border border-gray-200 dark:border-gray-700
+                               focus:ring-2 focus:ring-indigo-500 focus:border-indigo-400 outline-none transition-all placeholder:text-gray-400">
+                </div>
+
+                <!-- EMAIL -->
+                <div class="relative">
+                    <label class="block text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-1.5">Your Email</label>
+                    <input type="email" id="contact-email" placeholder="john@example.com"
+                        class="w-full px-4 py-3 rounded-xl
+                               bg-gray-50 dark:bg-gray-900/70
+                               text-gray-800 dark:text-white
+                               border border-gray-200 dark:border-gray-700
+                               focus:ring-2 focus:ring-indigo-500 focus:border-indigo-400 outline-none transition-all placeholder:text-gray-400">
+                </div>
+
+                <!-- MESSAGE -->
+                <div class="relative">
+                    <label class="block text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-1.5">Your Message</label>
+                    <textarea id="contact-message" rows="5" placeholder="Tell me about your project or idea..."
+                        class="w-full px-4 py-3 rounded-xl
+                               bg-gray-50 dark:bg-gray-900/70
+                               text-gray-800 dark:text-white
+                               border border-gray-200 dark:border-gray-700
+                               focus:ring-2 focus:ring-indigo-500 focus:border-indigo-400 outline-none transition-all resize-none placeholder:text-gray-400"></textarea>
+                </div>
+
+                <!-- BUTTONS -->
+                <div class="flex gap-3 pt-1">
+                    <button type="button" id="form-cancel"
+                        class="flex-1 py-3 rounded-xl
+                               bg-gray-100 dark:bg-gray-700
+                               hover:bg-gray-200 dark:hover:bg-gray-600
+                               text-gray-700 dark:text-gray-200
+                               transition-all font-semibold border border-gray-200 dark:border-gray-600">
+                        Cancel
+                    </button>
+                    <button type="submit"
+                        class="flex-1 py-3 rounded-xl
+                               bg-gradient-to-r from-indigo-600 to-violet-600
+                               hover:from-indigo-700 hover:to-violet-700
+                               text-white font-bold
+                               transition-all shadow-md hover:shadow-lg hover:shadow-indigo-200 dark:hover:shadow-indigo-900/40">
+                        Send Message ✉️
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- ======================== FOOTER ======================== -->
+    <!-- ======================== FOOTER ======================== -->
+<footer class="py-10 text-center bg-white dark:bg-gray-950 border-t border-indigo-50 dark:border-gray-800">
+
+    <!-- LOGO -->
+    <div class="mb-4">
+        <span class="text-2xl font-extrabold bg-gradient-to-r from-indigo-600 via-violet-600 to-pink-500 bg-clip-text text-transparent font-display">
+            PK.
+        </span>
+    </div>
+
+    <!-- SOCIAL ICONS -->
+    <div class="flex justify-center items-center gap-4 mb-4">
+
+        <!-- LINKEDIN -->
+        <a href="https://www.linkedin.com/in/puneeth-k-512930265" target="_blank"
+            class="group w-12 h-12 flex items-center justify-center rounded-full 
+                   bg-white dark:bg-gray-800 border border-indigo-100 dark:border-gray-700 shadow-md
+                   hover:bg-indigo-600 hover:border-indigo-600 transition-all duration-300 hover:scale-110 hover:shadow-lg">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+                class="w-5 h-5 group-hover:invert transition-all">
+        </a>
+
+        <!-- GMAIL -->
+<a href="mailto:puneethm240@gmail.com"
+    class="group w-12 h-12 flex items-center justify-center rounded-full
+           bg-white dark:bg-gray-800 border border-indigo-100 dark:border-gray-700 shadow-md
+           hover:bg-red-500 hover:border-red-500 transition-all duration-300 hover:scale-110 hover:shadow-lg">
+
+    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png"
+        class="w-5 h-5 group-hover:invert transition-all">
+</a>
+
+
+        <!-- GITHUB -->
+        <a href="https://github.com/Puneeth-coder" target="_blank"
+            class="group w-12 h-12 flex items-center justify-center rounded-full
+                   bg-white dark:bg-gray-800 border border-indigo-100 dark:border-gray-700 shadow-md
+                   hover:bg-gray-900 hover:border-gray-900 transition-all duration-300 hover:scale-110 hover:shadow-lg">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
+                class="w-5 h-5 group-hover:invert transition-all">
+        </a>
+
+    </div>
+
+    <!-- COPYRIGHT -->
+    <p class="text-gray-500 dark:text-gray-400 text-sm">
+        © 2026 Puneeth K
+    </p>
+
+</footer>
+    <!-- BACK TO TOP -->
+    <button id="backToTop"
+        class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-indigo-600 to-violet-600 text-white rounded-full shadow-xl shadow-indigo-300/40 dark:shadow-indigo-900/50 hidden items-center justify-center text-xl hover:scale-110 transition-all duration-300 z-50">
+        ↑
+    </button>
+
+    <!-- ======================== SCRIPTS ======================== -->
+    <script src="js/data/projects.js"></script>
+    <script src="js/data/skills.js"></script>
+
+    <script src="js/features/theme-persist.js"></script>
+    <script src="js/features/typing-animation.js"></script>
+    <script src="js/features/skills-render.js"></script>
+    <script src="js/features/skill-filter.js"></script>
+    <script src="js/features/project-render.js"></script>
+    <script src="js/features/project-filter.js"></script>
+    <script src="js/features/project-count.js"></script>
+    <script src="js/features/contact-validation.js"></script>
+    <script src="js/features/back-to-top.js"></script>
+    <script src="js/features/scroll-spy.js"></script>
+
+    <script>
+        // Reveal on scroll
+        const reveals = document.querySelectorAll(".reveal");
+        function revealOnScroll() {
+            reveals.forEach(el => {
+                const top = el.getBoundingClientRect().top;
+                if (top < window.innerHeight - 80) {
+                    el.classList.add("active");
+                }
+            });
+        }
+        window.addEventListener("scroll", revealOnScroll, { passive: true });
+        revealOnScroll();
+    </script>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
